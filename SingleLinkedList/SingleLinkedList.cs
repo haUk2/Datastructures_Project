@@ -27,7 +27,10 @@ namespace GenericList
             }
             _count++;
         }
+        public void SortDesc(IMyList list)
+        {
 
+        }
         public void SwitchNode(Node argFirstNode, Node argSecondNode)
         {
             var fn = GetNode(argFirstNode);
@@ -52,8 +55,6 @@ namespace GenericList
             }
             return null;
         }
-
-
         public int count()
         {
             return _count;
@@ -77,17 +78,14 @@ namespace GenericList
         {
             sortstrategy = sortStrategy;
         }
-
         public Node GetFirst()
         {
             return first;
         }
-
         public Node GetLast()
         {
             return last;
         }
-
         public void RemoveLastElement()
         {
             var cur = first;
@@ -101,10 +99,13 @@ namespace GenericList
                 cur = cur.next;
             }
         }
-
         public void Sort()
         {
             sortstrategy.Sort(this);
+        }
+        public void SortDesc()
+        {
+            sortstrategy.SortDesc(this);
         }
     }
 }
