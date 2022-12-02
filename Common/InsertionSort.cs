@@ -28,10 +28,8 @@ namespace Common
         }
         public override void SortDesc(IMyList list)
         {
-            
         }
     }
-
     public class InsertionSortReverted : SortStrategy
     {
         public override void Sort(IMyList list)
@@ -55,7 +53,6 @@ namespace Common
 
         public override void SortDesc(IMyList list)
         {
-
         }
     }
 }

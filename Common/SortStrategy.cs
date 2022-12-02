@@ -11,5 +11,4 @@ namespace Common
         public abstract void Sort(IMyList list);
         public abstract void SortDesc(IMyList list);
     }
-
 }

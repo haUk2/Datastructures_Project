@@ -48,7 +48,6 @@ namespace SortAlgorithmTests
             myLL.Sort();
             Assert.AreEqual(myLL.ToString(), "| 1 | 2 | 2 | 2 | 2 | 3 | 3 | 4 | 4 |");
         }
-
         [Test]
         public void TestSLLBubbleSortDescStrategy_fewNodes_NodesAreSorted()
         {
