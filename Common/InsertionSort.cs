@@ -50,7 +50,6 @@ namespace Common
             }
             Console.WriteLine("InsertionSorted list ");
         }
-
         public override void SortDesc(IMyList list)
         {
         }
