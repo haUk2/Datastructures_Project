@@ -26,5 +26,24 @@ namespace Common
             }
             Console.WriteLine("BubbleSorted list: " + list);
         }
+
+        public override void SortDesc(IMyList list)
+        {
+            var nextNode = list.GetFirst().next;
+            var switched = true;
+            while (switched)
+            {
+                switched = false;
+                for (var cur = list.GetFirst(); cur.next != null; cur = cur.next)
+                {
+                    if (cur.data < cur.next.data)
+                    {
+                        (cur.data, cur.next.data) = (cur.next.data, cur.data);
+                        switched = true;
+                    }
+                }
+            }
+            Console.WriteLine("BubbleDescSorted list: " + list);
+        }
     }
 }

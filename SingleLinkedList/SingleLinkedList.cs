@@ -28,6 +28,11 @@ namespace GenericList
             _count++;
         }
 
+        public void SortDesc(IMyList list)
+        {
+
+        }
+
         public void SwitchNode(Node argFirstNode, Node argSecondNode)
         {
             var fn = GetNode(argFirstNode);
@@ -105,6 +110,11 @@ namespace GenericList
         public void Sort()
         {
             sortstrategy.Sort(this);
+        }
+
+        public void SortDesc()
+        {
+            sortstrategy.SortDesc(this);
         }
     }
 }
